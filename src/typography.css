@@ -1,0 +1,72 @@
+/*
+  Typography: Acquisition.com style
+  Font stacks, weights, sizes, and spacing for headings, body, buttons, and small text.
+  Add this import to your index.html HEAD (replace xxxxxxx with your Adobe Fonts project code):
+  <link rel="stylesheet" href="https://use.typekit.net/xxxxxxx.css">
+*/
+/* Headings */
+h1, .h1 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.5em;
+}
+h2, .h2 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.5em;
+}
+h3, .h3 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.5em;
+}
+
+/* Body text */
+body, p, li, .body-text {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: normal;
+}
+
+/* Small text */
+small, .caption, .footnote {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+}
+
+/* Buttons and CTAs */
+button, .cta, .btn {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+
+/* Utility classes for font weights */
+.font-regular { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-bold { font-weight: 700; }
+.font-extrabold { font-weight: 800; }
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  h1, .h1 { font-size: 32px; }
+  h2, .h2 { font-size: 24px; }
+  h3, .h3 { font-size: 18px; }
+  body, p, li, .body-text { font-size: 15px; }
+}
