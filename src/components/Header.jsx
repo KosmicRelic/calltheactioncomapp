@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { RxHamburgerMenu } from 'react-icons/rx';
+import { Link } from 'react-router-dom';
+import { RxHamburgerMenu, RxCross2 } from 'react-icons/rx';
 import HeaderNav from './HeaderNav';
 import styles from '../App.module.css';
 
@@ -8,12 +9,12 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.innerHeader}>
-        <div className={styles.logo}>
+  <Link to="/" className={styles.logoLink}>
           <span className={styles.logoC}>C</span>ALL
           <span className={styles.logoT}>T</span>HE
           <span className={styles.logoA}>A</span>CTION
-          <span style={{ fontWeight: 300 }}>.com</span>
-        </div>
+          <span className={styles.logoDotCom}>.COM</span>
+        </Link>
         {/* Desktop Nav */}
         <div className={styles.desktopNav}>
           <HeaderNav />
@@ -25,7 +26,14 @@ export default function Header() {
       </div>
       {/* Mobile Menu Drawer */}
       {menuOpen && (
-        <div className={styles.mobileMenu} onClick={() => setMenuOpen(false)}>
+        <div className={styles.mobileMenu}>
+          <button
+            className={styles.mobileMenuClose}
+            onClick={() => setMenuOpen(false)}
+            aria-label="Close menu"
+          >
+            <RxCross2 size={32} color="white" />
+          </button>
           <HeaderNav />
         </div>
       )}

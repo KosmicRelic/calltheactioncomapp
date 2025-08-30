@@ -2,8 +2,8 @@ import styles from '../App.module.css';
 
 const benefits = [
   {
-    title: 'No Upfront Cost',
-    desc: 'You only pay for closed customers. No retainers, no wasted ad spend.'
+    title: "There's No Cost",
+    desc: 'You get closed customers. No retainers, no wasted ad spend.'
   },
   {
     title: 'Done-For-You Marketing',
@@ -13,10 +13,6 @@ const benefits = [
     title: 'Scale Fast',
     desc: 'Get a steady stream of new customers without hiring or extra overhead.'
   },
-  {
-    title: 'Transparent Pricing',
-    desc: 'You set your price. We agree on a fee per closed customer.'
-  }
 ];
 
 export default function Benefits() {

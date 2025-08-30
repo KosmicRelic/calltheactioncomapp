@@ -13,7 +13,7 @@ body {
 
 /* Banner Styles */
 .banner {
-  background-color: rgb(49, 99, 168); /* Navy from header */
+  background-color: rgb(32, 78, 143);
   color: white;
   text-align: center;
   padding: 22px 20px;
@@ -23,7 +23,7 @@ body {
   position: relative;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 1;
 }
 
 .new{
@@ -104,8 +104,33 @@ body {
   display: flex;
   flex-direction: column;
   padding: 40px 24px;
+  padding-top: 60px;
 }
 
+.logoLink {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  font-size: 22px;
+}
+
+.logoDotCom {
+  font-weight: 300;
+  font-size: inherit;
+}
+
+.mobileMenuClose {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: none;
+  border: none;
+  color: #fff;
+  z-index: 2;
+}
 .headerNav {
   display: flex;
   gap: 24px;
@@ -120,7 +145,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
 }
 .headerNavLink:hover {
-  color: rgb(49, 99, 168);
+  color: rgb(32, 78, 143);
 }
 
 .headerNavCta {
@@ -133,20 +158,20 @@ body {
   font-family: var(--font-body);
 }
  .headerNavCta:hover {
-  background-color: rgb(49, 99, 168);
+  background-color: rgb(32, 78, 143);
   transform: scale(1.02);
 }
 
 .logo {
   letter-spacing: 1px;
-  font-size: 1.4rem;
-  font-weight: 800;
+  font-size: 1.4rem !important;
+  font-weight: 800 !important;
   text-transform: uppercase;
   color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
 }
  .logoC, .logoT, .logoA {
-  color: rgb(49, 99, 168) !important;
+  color: rgb(83, 138, 216) !important;
 }
 
 .navCta {
@@ -198,7 +223,7 @@ body {
 
 .freeWord {
   font-weight: 800;
-  color: rgb(49, 99, 168);
+  color: rgb(32, 78, 143);
   text-decoration: underline;
   /* font-style: italic; */
 }
@@ -206,17 +231,18 @@ body {
 .ctaButton {
   display: inline-block;
   padding: 16px 0px;
-  background-color: rgb(49, 99, 168);
+  background-color: rgb(32, 78, 143);
   color: white;
   text-decoration: none;
   border-radius: 40px;
   font-weight: 700;
   font-family: var(--font-body);
   width: 100%;
+  text-transform: uppercase;
 }
 
 .ctaButton:hover {
-  background-color: #004e56;
+  background-color: rgb(35, 70, 119);
   transform: scale(1.02);
 }
 
@@ -250,7 +276,7 @@ body {
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-left: 4px solid rgb(49, 99, 168);
+  border-left: 4px solid rgb(32, 78, 143);
 }
 
 .benefitCard:hover {
@@ -259,7 +285,7 @@ body {
 }
 
 .benefitCard h3 {
-  color: rgb(49, 99, 168);
+  color: rgb(32, 78, 143);
   margin-bottom: 12px;
   font-family: var(--font-heading);
   font-size: 24px;
@@ -304,7 +330,7 @@ body {
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-left: 4px solid rgb(49, 99, 168);
+  border-left: 4px solid rgb(32, 78, 143);
 }
 
 .testimonialCard:hover {
@@ -322,7 +348,7 @@ body {
 
 .testimonialAuthor {
   font-style: italic;
-  color: rgb(49, 99, 168);
+  color: rgb(32, 78, 143);
   margin-top: 12px;
 }
 
@@ -363,20 +389,20 @@ body {
 .input {
   padding: 14px;
   font-size: 1.1rem;
-  border: 2px solid rgb(49, 99, 168);
+  border: 2px solid rgb(32, 78, 143);
   border-radius: 5px;
   font-family: var(--font-body);
 }
 
 .input:focus {
-  border-color: rgb(49, 99, 168);
+  border-color: rgb(32, 78, 143);
   box-shadow: 0 0 8px rgba(212, 160, 23, 0.3);
   outline: none;
 }
 
 .submitButton {
   padding: 15px;
-  background-color: rgb(49, 99, 168);
+  background-color: rgb(32, 78, 143);
   color: white;
   border: none;
   border-radius: 5px;
@@ -387,7 +413,7 @@ body {
 }
 
 .submitButton:hover {
-  background-color: rgb(49, 99, 168);
+  background-color: rgb(32, 78, 143);
   transform: scale(1.02);
 }
 
@@ -401,7 +427,7 @@ body {
 }
 
 .scheduleText a {
-  color: rgb(49, 99, 168);
+  color: rgb(32, 78, 143);
   text-decoration: none;
 }
 
