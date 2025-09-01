@@ -6,11 +6,11 @@ export default function About() {
     <div style={{ maxWidth: 600, margin: '40px auto', padding: 28, background: '#fff', borderRadius: 10, boxShadow: '0 2px 12px rgba(83,138,216,0.09)' }}>
       <div style={{ marginBottom: 18, display: 'flex', alignItems: 'baseline' }}>
         <span style={{ fontWeight: 600, fontSize: 18, lineHeight: 1 }}>About</span>
-        <div className={styles.whiteBackgroundLogo} style={{ display: 'inline-block', marginLeft: 10 }}>
-          <span className={styles.whiteBackgroundLogoLogoC}>C</span>ALL
-          <span className={styles.whiteBackgroundLogoLogoT}>T</span>HE
-          <span className={styles.whiteBackgroundLogoLogoA}>A</span>CTION
-          <span style={{ fontWeight: 300 }}>.COM</span>
+        <div className={styles.blackLogo} style={{ display: 'inline-block', marginLeft: 10 }}>
+          <span className={styles.blackLogoC}>C</span>ALL
+          <span className={styles.blackLogoT}>T</span>HE
+          <span className={styles.blackLogoA}>A</span>CTION
+          <span className={styles.blackLogoDotCom}>.COM</span>
         </div>
       </div>
       <div style={{ fontSize: 16, color: '#222', marginBottom: 0 }}>

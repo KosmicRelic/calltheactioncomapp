@@ -33,11 +33,11 @@ export default function Careers() {
     <div style={{ maxWidth: 500, margin: '40px auto', padding: 24, background: '#fff', borderRadius: 8, boxShadow: '0 2px 8px rgba(0,0,0,0.07)' }}>
       <div style={{ marginBottom: 16, display: 'flex', alignItems: 'baseline' }}>
         <span style={{ fontWeight: 600, fontSize: 16, lineHeight: 1 }}>Work With</span>
-        <div className={styles.whiteBackgroundLogo} style={{ display: 'inline-block', marginLeft: 10 }}>
-          <span className={styles.whiteBackgroundLogoLogoC}>C</span>ALL
-          <span className={styles.whiteBackgroundLogoLogoT}>T</span>HE
-          <span className={styles.whiteBackgroundLogoLogoA}>A</span>CTION
-          <span style={{ fontWeight: 300 }}>.COM</span>
+        <div className={styles.blackLogo} style={{ display: 'inline-block', marginLeft: 10 }}>
+          <span className={styles.blackLogoC}>C</span>ALL
+          <span className={styles.blackLogoT}>T</span>HE
+          <span className={styles.blackLogoA}>A</span>CTION
+          <span className={styles.blackLogoDotCom}>.COM</span>
         </div>
       </div>
       <div style={{

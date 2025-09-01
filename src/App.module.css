@@ -1,3 +1,38 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.mobileMenu .headerNav {
+  margin-top: 70px;
+}
+/* Backdrop for mobile menu */
+.mobileMenuBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.18);
+  z-index: 9998;
+  display: flex;
+  justify-content: flex-end;
+}
+/* Black logo variant for About and Careers */
+.blackLogo {
+  letter-spacing: 1px;
+  font-size: 1.4rem !important;
+  font-weight: 800 !important;
+  text-transform: uppercase;
+  color: #111;
+}
+.blackLogoC, .blackLogoT, .blackLogoA {
+  color: rgb(32, 78, 143) !important;
+}
+.blackLogoDotCom {
+  font-weight: 300;
+  font-size: inherit;
+  color: #111;
+}
 
 @import './typography.css';
 
@@ -64,7 +99,7 @@ body {
   background-color: rgb(20, 22, 39);
   color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 0.5;
 }
 
 .innerHeader {
@@ -142,7 +177,6 @@ body {
   text-decoration: none;
   font-weight: 300;
   font-size: 1.1rem;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
 }
 .headerNavLink:hover {
   color: rgb(32, 78, 143);
@@ -155,7 +189,6 @@ body {
   text-decoration: none;
   border-radius: 5px;
   font-weight: 700;
-  font-family: var(--font-body);
 }
  .headerNavCta:hover {
   background-color: rgb(32, 78, 143);
@@ -168,7 +201,6 @@ body {
   font-weight: 800 !important;
   text-transform: uppercase;
   color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
 }
  .logoC, .logoT, .logoA {
   color: rgb(83, 138, 216) !important;
@@ -180,7 +212,6 @@ body {
   text-decoration: none;
   border-radius: 5px;
   font-weight: 700;
-  font-family: var(--font-body);
 }
 
 .navCta:hover {
@@ -204,7 +235,6 @@ body {
 .hero h1 {
   margin: 0px;
   color: rgb(20, 22, 39);
-  font-family: var(--font-heading);
   font-size: 48px;
   font-weight: 1000;
   line-height: 1.2;
@@ -216,7 +246,6 @@ body {
   font-size: 1.3rem;
   margin-bottom: 25px;
   color: rgb(20, 22, 39);
-  font-family: var(--font-body);
   font-weight: 400;
   line-height: 1.6;
 }
@@ -236,7 +265,6 @@ body {
   text-decoration: none;
   border-radius: 40px;
   font-weight: 700;
-  font-family: var(--font-body);
   width: 100%;
   text-transform: uppercase;
 }
@@ -258,7 +286,6 @@ body {
 .benefits h2 {
   color: rgb(20, 22, 39); /* Navy */
   margin-bottom: 20px;
-  font-family: var(--font-heading);
   font-size: 32px;
   font-weight: 700;
   line-height: 1.25;
@@ -287,7 +314,6 @@ body {
 .benefitCard h3 {
   color: rgb(32, 78, 143);
   margin-bottom: 12px;
-  font-family: var(--font-heading);
   font-size: 24px;
   font-weight: 700;
   line-height: 1.3;
@@ -297,7 +323,6 @@ body {
 .benefitCard p {
   color: rgb(20, 22, 39); /* Navy */
   font-size: 1.1rem;
-  font-family: var(--font-body);
   font-weight: 400;
   line-height: 1.6;
 }
@@ -312,7 +337,6 @@ body {
 
 .testimonials h2 {
   margin-bottom: 20px;
-  font-family: var(--font-heading);
   font-size: 32px;
   font-weight: 700;
   line-height: 1.25;
@@ -341,7 +365,6 @@ body {
 .testimonialCard p {
   color: rgb(20, 22, 39); /* Navy */
   font-size: 1.1rem;
-  font-family: var(--font-body);
   font-weight: 400;
   line-height: 1.6;
 }
@@ -362,7 +385,6 @@ body {
 .contact h2 {
   color: rgb(20, 22, 39); /* Navy */
   margin-bottom: 15px;
-  font-family: var(--font-heading);
   font-size: 32px;
   font-weight: 700;
   line-height: 1.25;
@@ -373,7 +395,6 @@ body {
   font-size: 1.3rem;
   color: rgb(20, 22, 39); /* Navy */
   margin-bottom: 25px;
-  font-family: var(--font-body);
   font-weight: 400;
   line-height: 1.6;
 }
@@ -391,7 +412,6 @@ body {
   font-size: 1.1rem;
   border: 2px solid rgb(32, 78, 143);
   border-radius: 5px;
-  font-family: var(--font-body);
 }
 
 .input:focus {
@@ -408,7 +428,6 @@ body {
   border-radius: 5px;
   font-size: 1.1rem;
   font-weight: 700;
-  font-family: var(--font-body);
   cursor: pointer;
 }
 
@@ -421,7 +440,6 @@ body {
   margin-top: 20px;
   font-size: 1.1rem;
   color: rgb(20, 22, 39); /* Navy */
-  font-family: var(--font-body);
   font-weight: 400;
   line-height: 1.6;
 }
@@ -446,7 +464,6 @@ body {
 
 .footer p {
   font-size: 0.9rem;
-  font-family: var(--font-body);
   font-weight: 400;
   line-height: 1.5;
 }

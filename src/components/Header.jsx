@@ -21,20 +21,25 @@ export default function Header() {
         </div>
         {/* Mobile Hamburger */}
         <button className={styles.hamburger} onClick={() => setMenuOpen(m => !m)} aria-label="Open menu">
-          <RxHamburgerMenu size={32} />
+          <RxHamburgerMenu size={34} strokeWidth={0.4}/>
         </button>
       </div>
       {/* Mobile Menu Drawer */}
       {menuOpen && (
-        <div className={styles.mobileMenu}>
-          <button
-            className={styles.mobileMenuClose}
-            onClick={() => setMenuOpen(false)}
-            aria-label="Close menu"
+        <div className={styles.mobileMenuBackdrop} onClick={() => setMenuOpen(false)}>
+          <div
+            className={styles.mobileMenu}
+            onClick={e => e.stopPropagation()}
           >
-            <RxCross2 size={32} color="white" />
-          </button>
-          <HeaderNav />
+            <button
+              className={styles.mobileMenuClose}
+              onClick={() => setMenuOpen(false)}
+              aria-label="Close menu"
+            >
+              <RxCross2 size={32} color="white" />
+            </button>
+            <HeaderNav onNavigate={() => setMenuOpen(false)} />
+          </div>
         </div>
       )}
     </header>
