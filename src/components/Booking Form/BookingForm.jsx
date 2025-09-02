@@ -151,7 +151,7 @@ export default function BookingForm({ lang = 'en', partnerMode = false }) {
 
   return (
     <>
-  <h1 className={styles.hormoziTitle}>{partnerMode ? "BOOK A CALL BELOW TO SEE IF YOU'RE A FIT" : t.bookTitle}</h1>
+  <h1 className={styles.hormoziTitle}>{partnerMode ? <>BOOK A CALL <span style={{ color: 'rgb(32, 78, 143)' }}>BELOW</span> TO SEE IF YOU'RE A FIT</> : t.bookTitle}</h1>
       <section className={styles.bookingSection}>
         <div className={styles.formContainer}>
           <form className={styles.bookingForm} aria-label="Partner Form" onSubmit={handleSubmit}>

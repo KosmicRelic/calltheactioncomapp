@@ -26,7 +26,7 @@ body{
   color: #111;
 }
 .blackLogoC, .blackLogoT, .blackLogoA {
-  color: rgb(32, 78, 143) !important;
+  color: rgb(50, 100, 170) !important;
 }
 .blackLogoDotCom {
   font-weight: 300;
@@ -48,7 +48,7 @@ body {
 
 /* Banner Styles */
 .banner {
-  background-color: rgb(32, 78, 143);
+  background-color: rgb(50, 100, 170);
   color: white;
   text-align: center;
   padding: 22px 20px;
@@ -179,7 +179,7 @@ body {
   font-size: 1.1rem;
 }
 .headerNavLink:hover {
-  color: rgb(32, 78, 143);
+  color: rgb(50, 100, 170);
 }
 
 .headerNavCta {
@@ -191,7 +191,7 @@ body {
   font-weight: 700;
 }
  .headerNavCta:hover {
-  background-color: rgb(32, 78, 143);
+  background-color: rgb(50, 100, 170);
   transform: scale(1.02);
 }
 
@@ -252,7 +252,7 @@ body {
 
 .freeWord {
   font-weight: 800;
-  color: rgb(32, 78, 143);
+  color: rgb(50, 100, 170);
   text-decoration: underline;
   /* font-style: italic; */
 }
@@ -260,7 +260,7 @@ body {
 .ctaButton {
   display: inline-block;
   padding: 16px 0px;
-  background-color: rgb(32, 78, 143);
+  background-color: rgb(50, 100, 170);
   color: white;
   text-decoration: none;
   border-radius: 40px;
@@ -303,7 +303,7 @@ body {
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-left: 4px solid rgb(32, 78, 143);
+  border-left: 4px solid rgb(50, 100, 170);
 }
 
 .benefitCard:hover {
@@ -312,7 +312,7 @@ body {
 }
 
 .benefitCard h3 {
-  color: rgb(32, 78, 143);
+  color: rgb(50, 100, 170);
   margin-bottom: 12px;
   font-size: 24px;
   font-weight: 700;
@@ -354,7 +354,7 @@ body {
   padding: 30px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-left: 4px solid rgb(32, 78, 143);
+  border-left: 4px solid rgb(50, 100, 170);
 }
 
 .testimonialCard:hover {
@@ -371,7 +371,7 @@ body {
 
 .testimonialAuthor {
   font-style: italic;
-  color: rgb(32, 78, 143);
+  color: rgb(50, 100, 170);
   margin-top: 12px;
 }
 
@@ -410,19 +410,19 @@ body {
 .input {
   padding: 14px;
   font-size: 1.1rem;
-  border: 2px solid rgb(32, 78, 143);
+  border: 2px solid rgb(50, 100, 170);
   border-radius: 5px;
 }
 
 .input:focus {
-  border-color: rgb(32, 78, 143);
+  border-color: rgb(50, 100, 170);
   box-shadow: 0 0 8px rgba(212, 160, 23, 0.3);
   outline: none;
 }
 
 .submitButton {
   padding: 15px;
-  background-color: rgb(32, 78, 143);
+  background-color: rgb(50, 100, 170);
   color: white;
   border: none;
   border-radius: 5px;
@@ -432,7 +432,7 @@ body {
 }
 
 .submitButton:hover {
-  background-color: rgb(32, 78, 143);
+  background-color: rgb(50, 100, 170);
   transform: scale(1.02);
 }
 
@@ -445,7 +445,7 @@ body {
 }
 
 .scheduleText a {
-  color: rgb(32, 78, 143);
+  color: rgb(50, 100, 170);
   text-decoration: none;
 }
 
