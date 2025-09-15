@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Marketing.module.css";
+import styles from "../App.module.css";
 
 const marketingStory = [
   {
@@ -27,18 +27,31 @@ const marketingStory = [
 function Marketing() {
   return (
     <div className={styles.marketingPage}>
-      <div className={styles.heroSection}>
-        <h1 className={styles.title}>Best Marketing Tactics</h1>
-        <p className={styles.subtitle}>A story-driven guide to building lifetime value and lasting customer relationships.</p>
-      </div>
-      <div className={styles.storySection}>
-        {marketingStory.map((block, idx) => (
-          <div key={idx} className={styles.storyBlock}>
-            <span className={styles.highlight}>{block.highlight}:</span>
-            <span className={styles.storyText}>{block.text}</span>
-          </div>
-        ))}
-      </div>
+      <section className={styles.marketingHero}>
+        <div className={styles.sectionBadge}>
+          <span className={styles.badgeIcon}>📊</span>
+          <span>Marketing Strategy</span>
+        </div>
+        
+        <h1 className={styles.marketingTitle}>
+          Healthcare Marketing That Converts
+        </h1>
+        
+        <p className={styles.marketingSubtitle}>
+          Proven strategies to attract, convert, and retain healthcare patients in Greece's competitive medical market.
+        </p>
+      </section>
+
+      <section className={styles.marketingContent}>
+        <div className={styles.marketingGrid}>
+          {marketingStory.map((block, idx) => (
+            <div key={idx} className={styles.marketingCard}>
+              <h3 className={styles.cardTitle}>{block.highlight}</h3>
+              <p className={styles.cardText}>{block.text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }

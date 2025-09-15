@@ -1,15 +1,17 @@
 import styles from '../App.module.css';
+import { Link } from 'react-router-dom';
 
 export default function Banner() {
   return (
     <div className={styles.banner}>
-      <span className={styles.new}>NEW</span>
-      <span><span className={styles.bannerHighlight}>Partner opportunities now available</span> — Find out if you're a fit</span>
-      <a href="#partner" className={styles.bannerCta}>
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="16" viewBox="0 0 32 16" fill="none">
-          <path d="M31.7071 8.70711C32.0976 8.31659 32.0976 7.68342 31.7071 7.2929L25.3431 0.928934C24.9526 0.53841 24.3195 0.53841 23.9289 0.928934C23.5384 1.31946 23.5384 1.95262 23.9289 2.34315L29.5858 8L23.9289 13.6569C23.5384 14.0474 23.5384 14.6805 23.9289 15.0711C24.3195 15.4616 24.9526 15.4616 25.3431 15.0711L31.7071 8.70711ZM-8.74228e-08 9L31 9L31 7L8.74228e-08 7L-8.74228e-08 9Z" fill="white"></path>
+      <span className={styles.new}>PARTNER</span>
+      <span><span className={styles.bannerHighlight}>Limited partnership slots now available</span> — Apply today to secure your spot</span>
+      <Link to="/partner" className={styles.bannerCta}>
+        Apply Now
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none" style={{marginLeft: '8px'}}>
+          <path d="M15.7071 8.70711C16.0976 8.31659 16.0976 7.68342 15.7071 7.2929L9.34315 1.29289C8.95262 0.902369 8.31946 0.902369 7.92893 1.29289C7.53841 1.68342 7.53841 2.31658 7.92893 2.70711L13.2218 8L7.92893 13.2929C7.53841 13.6834 7.53841 14.3166 7.92893 14.7071C8.31946 15.0976 8.95262 15.0976 9.34315 14.7071L15.7071 8.70711ZM0 9H15V7H0V9Z" fill="white"/>
         </svg>
-      </a>
+      </Link>
     </div>
   );
 }
